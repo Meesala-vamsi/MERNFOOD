@@ -11,7 +11,7 @@ export const ContextProvider = ({children})=>{
     const [token,setToken] = useState("")
     const [food_list,setFoodList] = useState([])
 
-    const url = 'http://localhost:3001'
+    const url = 'https://mernfood-backend.onrender.com'
 
 
     //ADD TO CART API
@@ -54,7 +54,7 @@ export const ContextProvider = ({children})=>{
 
     const fetchFoodData=async()=>{
         const response = await axios.get(`${url}/api/food/list`)
-
+        console.log(response)
         if(response.status===200){
             setFoodList(response.data.data.foods)
         }

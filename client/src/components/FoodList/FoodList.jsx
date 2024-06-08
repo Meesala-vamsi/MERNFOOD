@@ -6,6 +6,7 @@ import FoodItems from "../FoodItems/FoodItems"
 
 const FoodList = ({category}) => {
     const {food_list} = useContext(Context)
+    console.log(food_list)
 
   return (
     <div className="food-list">

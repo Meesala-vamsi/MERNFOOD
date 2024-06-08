@@ -11,6 +11,7 @@ const LoginPopup = ({setCurrStatus}) => {
     const [getStatus,setStatus] = useState("Login")
 
     const {url,setToken,token} = useContext(Context)
+    console.log(url)
     const [loginData,setLoginData] = useState({
         name:"",
         email:"",
