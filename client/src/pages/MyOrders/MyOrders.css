@@ -1,0 +1,38 @@
+.order-details-container{
+    background-color: aliceblue;
+    padding: 27px 39px;
+}
+
+.order-details-container h1{
+    margin-bottom: 15px;
+    font-size: max(1.2vw,27px);
+}
+
+.order-details-container .order-list-container{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-list-container .order-list-items{
+    border: 1px solid #0000007d;
+    padding: 9px 14px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.order-list-items img{
+    height: 77px;
+    width: 99px;
+    border-radius: 5px;
+}
+.order-list-items p{
+    font-weight: bold;
+}
+
+.order-list-items span{
+    color: tomato;
+    margin-top: 6px;
+}

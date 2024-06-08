@@ -1,0 +1,28 @@
+.list-product-container{
+    padding: 30px;
+    font-family: "Roboto";
+    width: 100%;
+}
+
+.list-product-container h1{
+    font-size: 20px;
+}
+
+.list-product-container .list-product-item{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 0.5fr;
+    border: 1px solid #000;
+    align-items: center;
+    padding: 10px 16px;
+    
+}
+
+
+.list-product-container .list-items-er img{
+    width: 50px;
+}
+
+.list-items-er .delete-icon{
+   color: gray;
+   cursor: pointer;
+}

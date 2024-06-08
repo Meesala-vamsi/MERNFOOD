@@ -1,0 +1,75 @@
+.add-container{
+    width: 70%;
+    margin-left: 30px;
+    font-family: "Roboto";
+}
+
+.add-container p{
+    font-size: max(1.2vw,15px);
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ .upload-container label{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 6px;
+   background-color: rgb(16, 150, 203);
+   color: #fff;
+   border: 0;
+   font-size: 8px;
+   border-radius: 10px;
+   cursor: pointer;
+   max-width: 120px;
+   margin-top: 30px;
+}
+
+.product-name-container input{
+    padding:7px;
+   max-width: 320px;
+}
+
+.upload-container img{
+    width: 100px;
+    height: 100px;
+    border: 0;
+}
+
+.not-uploaded{
+    display: none;
+}
+
+
+.add-container .product-category-price{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.product-category select{
+    padding: 10px;
+    margin: 0;
+}
+.product-price input{
+    padding: 10px;
+    margin: 0;
+}
+.product-price p{
+    margin-bottom: 4px;
+}
+
+.product-category p{
+    margin-bottom: 4px;
+}
+.add-container button{
+    max-width: 130px;
+    padding: 10px 18px;
+    background-color: pink;
+    border: 0px;
+    margin-top: 20px;
+    cursor: pointer;
+}

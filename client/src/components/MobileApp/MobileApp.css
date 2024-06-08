@@ -1,0 +1,29 @@
+.mobile-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 68px 0px;
+    text-align: center;
+}
+
+.mobile-app .store-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.mobile-app h1{
+    font-size: max(2vw,20px);
+}
+.store-container img{
+    width: max(4vw,120px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.store-container img:hover{
+    transform: scale(1.2);
+}

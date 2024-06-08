@@ -1,0 +1,66 @@
+
+.header-container{
+    background: url("../../Assets/pasta-1181189_640\ \(1\).jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 30vw;
+    margin: 30px auto;
+    margin-top: 80px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.header-content{
+    position: absolute;
+    color: #fff;
+    padding: 1vw 3vw;
+    bottom: 10%;
+    width: 44vw;
+    animation: fadeIn 3s;
+}
+
+.header-content h2{
+    font-size: max(4.5vw,24px);
+    margin-bottom: 10px;
+}
+
+.header-content p{
+    font-size: 1vw;
+    margin-bottom: 17px;
+    font-weight: bold;
+}
+
+.header-content button{
+    border: 0;
+    background-color: #fff;
+    padding: 1.0vw 2.3vw;
+    color: #000;
+    border-radius: 30px;
+    font-size: 1vw;
+}
+
+@media screen and (max-width:1050px){
+
+}
+
+@media screen and (max-width:900px){
+    /* .header-content{
+        bottom: 20%;
+    } */
+}
+
+@media screen and (max-width:768px){
+    .header-content{
+        bottom: 10%;
+    }
+    .header-content h2{
+        font-size: max(3vw,15px);
+        margin-bottom: 5px;
+    }
+
+    .header-content p{
+        margin-bottom: 3px;
+    }
+}
+
+

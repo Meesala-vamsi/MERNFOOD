@@ -1,0 +1,62 @@
+.place-order{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0px;
+}
+
+.place-order .place-order-address{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: max(40%,400px);
+}
+
+.place-order-address h1{
+    font-size: max(1.3vw,22px);
+    margin-bottom: 30px;
+}
+
+.place-order-address input{
+    padding: 8px 6px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.place-order-address .multi-fields{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.place-order .cart-total-container{
+    width: 40%;
+}
+
+.cart-total-container h2{
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart-total-container div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-total-container div p{
+    font-weight: bold;
+}
+
+.cart-total-container hr{
+    margin: 10px 0px;
+}
+
+.cart-total-container button{
+    padding: 10px 15px;
+    border: 0px;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+    background-color: tomato;
+}

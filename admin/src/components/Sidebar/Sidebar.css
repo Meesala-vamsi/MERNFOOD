@@ -1,0 +1,39 @@
+.sidebar{
+    width: 18%;
+    border-right: 1px solid gray;
+    margin-top: 0px;
+    padding: 30px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Roboto";
+}
+
+.sidebar .sidebar-icon-container{
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-right: 0px;
+    padding: 0px 9px;
+    color: #000;
+    text-decoration: none;
+
+}
+
+.sidebar-icon-container .sidebar-icon{
+    margin-right: 10px;
+}
+
+.sidebar .active{
+    background-color: pink;
+    border: 1px solid pink;
+    border-right: 0px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:768px){
+    .sidebar-icon-container p{
+        display: none;
+    }
+}

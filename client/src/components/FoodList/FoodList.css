@@ -1,0 +1,14 @@
+.food-list{
+    margin-top: 20px;
+}
+
+.food-list .food-list-container{
+    list-style-type: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    gap: 20px;
+    row-gap: 30px;
+    margin-top: 30px;
+}
+

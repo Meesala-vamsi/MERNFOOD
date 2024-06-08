@@ -1,0 +1,225 @@
+.nav{
+    position: fixed;
+    top: 0;
+   
+    z-index: 2;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+
+.navbar-middle{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: 0.6s;
+}
+
+.navbar-middle li{
+    color: gray;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.navbar-right{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right .nav-icon{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.navbar-right button{
+    border: 1px solid tomato;
+    padding: 6px 10px;
+    font-size: 17px;
+    background-color: transparent;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.navbar-right button:hover{
+    background-color: rgba(211, 211, 211, 0.274);
+}
+
+.hovered{
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 2px;
+}
+
+.hovered:hover{
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 2px;
+}
+
+.on-scroll{
+    top: 0;
+    overflow: hidden;
+}
+
+.nav-profile-container{
+    position: relative;
+}
+.nav-profile-container .nav-profile-image{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.order-logout-container{
+    position: absolute;
+    display: none;
+    z-index: 2;
+    right: 0;
+    transition: 0.5s;
+}
+
+.nav-profile-container:hover .order-logout-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 15px;
+    background-color: rgba(255, 99, 71, 0.347);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.order-logout-container div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+.order-logout-container div .bag-icon{
+    font-size: 20px;
+}
+
+.order-logout-container div p{
+    font-size: 16px;
+}
+
+
+
+
+@media screen and (max-width:1050px){
+    .navbar img{
+        width: 100px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    
+    .navbar-middle{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        transition: 0.6s;
+    }
+    
+    .navbar-middle li{
+        color: gray;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .navbar-right{
+        gap: 15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar-right .nav-icon{
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    
+    .navbar-right button{
+        border: 1px solid tomato;
+        padding: 3px 6px;
+        font-size: 12px;
+        background-color: transparent;
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:900px){
+    .navbar img{
+        width: 100px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    
+    .navbar-middle{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        transition: 0.6s;
+        display: none;
+    }
+    
+    .navbar-middle li{
+        color: gray;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .navbar-right{
+        gap: 15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar-right .nav-icon{
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    
+    .navbar-right button{
+        border: 1px solid tomato;
+        padding: 3px 6px;
+        font-size: 12px;
+        background-color: transparent;
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:768px){
+    .navbar img{
+        width: 100px;
+    }
+
+    .navbar-middle{
+        display: none;
+    }
+
+    .navbar-right button{
+        border: 1px solid tomato;
+        padding: 3px 6px;
+        font-size: 12px;
+        background-color: transparent;
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+}
+

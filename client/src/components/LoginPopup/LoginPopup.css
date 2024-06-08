@@ -1,0 +1,68 @@
+.login-popup{
+    background-color: #00000090;
+    z-index: 999;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+.login-popup .pop-up{
+    place-self: center;
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 6px;
+}
+
+/* .login-popup .on-scroll{
+    overflow: visible;
+    display: none;
+} */
+
+.pop-up .login-name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-name-container p{
+    font-weight: bold;
+    font-size: 17px;
+}
+.login-name-container .close-icon{
+    cursor: pointer;
+}
+.pop-up .login-form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+.login-form-container input{
+    outline: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid tomato;
+}
+
+.login-form-container button{
+    padding: 9px 15px;
+    background-color: tomato;
+    border: 0;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.checkbox-container .checkbox{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.checkbox input{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkbox-container p span{
+    color: tomato;
+    cursor: pointer;
+}
