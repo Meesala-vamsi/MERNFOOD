@@ -25,7 +25,7 @@ const MyOrders = () => {
         getDetails()
     },[cookies.get("jwtToken")])
 
-    console.log(data)
+    // console.log(data)
 
   return (
     <div className="order-details-container">

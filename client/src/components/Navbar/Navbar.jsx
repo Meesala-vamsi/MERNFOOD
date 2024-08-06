@@ -11,7 +11,7 @@ import { toast } from 'react-toastify';
 
 const Navbar = ({setCurrStatus}) => {
   const [isHover,setIsHover] = useState("home")
-  const {token,setToken} = useContext(Context)
+  const {token,setToken,setFoodList} = useContext(Context)
   const navigate=useNavigate()
 
   const onClickSignin=()=>{
@@ -29,6 +29,7 @@ const Navbar = ({setCurrStatus}) => {
     if(cookieToken===undefined){
       setToken("")
       navigate('/')
+      setFoodList([])
       toast.success("Logout Successfully...")
     }
   }
