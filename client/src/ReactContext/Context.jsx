@@ -71,7 +71,7 @@ export const ContextProvider = ({children})=>{
         }}
 
         loadData()
-    },[])
+    },[token])
 
     return(
         <Context.Provider value={{

@@ -4,7 +4,7 @@ import "./List.css"
 import DeleteIcon from '@mui/icons-material/Delete';
 import {toast} from "react-toastify"
 
-const url="http://localhost:3001"
+const url="https://mernfood-backend.onrender.com"
 const List = () => {
   const [list,setList] = useState([])
   useEffect(()=>{

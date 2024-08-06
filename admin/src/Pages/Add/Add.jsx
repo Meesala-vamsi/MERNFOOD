@@ -26,7 +26,7 @@ const onClickHandle=(e)=>{
 const setFormDetails=async(e)=>{
   e.preventDefault()
 
-  const url = "http://localhost:3001"
+  const url = "https://mernfood-backend.onrender.com"
   const formData = new FormData()
 
   formData.append("name",data.name)
