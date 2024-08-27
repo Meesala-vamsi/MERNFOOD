@@ -9,7 +9,7 @@ const FoodItems = (props) => {
   return (
     <div className='food-items-container'>
       <div className='food-item-image-container'>
-        <img src={url+"/images/"+props.item.image} alt="" className='food-image' />
+        <img src={props.item.image} alt="" className='food-image' />
         {
             !cartData[props.item._id]?
             <img src={assets.add_icon_white} className='white-icon' onClick={()=>(addCartData(props.item._id))} alt=''/>

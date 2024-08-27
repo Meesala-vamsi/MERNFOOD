@@ -8,8 +8,8 @@ dotenv.config({path:"./config.env"})
 
 const stripe = new Stripe(process.env.STRIPE_SEC_KEY)
 
-
-const frontend_url = 'https://mernfood.netlify.app'
+// https://mernfood.netlify.app
+const frontend_url = 'http://localhost:3000'
 
 exports.placeOrder = asyncErrorController(async(req,res,next)=>{
     const order = await Order.create({userId:req.user._id,

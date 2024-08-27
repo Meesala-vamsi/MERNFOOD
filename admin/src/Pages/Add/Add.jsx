@@ -26,7 +26,7 @@ const onClickHandle=(e)=>{
 const setFormDetails=async(e)=>{
   e.preventDefault()
 
-  const url = "https://mernfood-backend.onrender.com"
+  const url = "http://localhost:3001"
   const formData = new FormData()
 
   formData.append("name",data.name)
@@ -40,7 +40,11 @@ const setFormDetails=async(e)=>{
   //   body:formData
   // }
 
-  const response = await axios.post(`${url}/api/food`,formData)
+  const response = await axios.post(`${url}/api/food`,formData,{
+    headers:{
+      'Content-Type': 'multipart/form-data'
+    }
+  })
   console.log(response)
   if(response.status===201){
     setData({

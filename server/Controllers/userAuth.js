@@ -54,13 +54,13 @@ exports.userSignup = asyncErrorController(async(req,res,next)=>{
 
 exports.login=asyncErrorController(async(req,res,next)=>{
     const user = await User.findOne({email:req.body.email})
-    if((!await user.comparePasswordsInDb(req.body.password)) || !user){
+    if (!user || !(await user.comparePasswordsInDb(req.body.password))){
         const error = new ErrorFeature("Invalid Email or Password",401)
-        next(error)
+        return next(error)
     }
        const token = generateJwt({id:user._id})
 
-       res.status(200).json({
+      res.status(200).json({
         status:"success",
         token,
         message:"Login Successfully..."

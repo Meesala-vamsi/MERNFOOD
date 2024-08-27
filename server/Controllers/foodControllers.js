@@ -8,13 +8,13 @@ const fs = require('fs')
 // creating a food Details
 
 exports.addFoodDetails= asyncErrorController( async(req,res,next)=>{
-    console.log(req)
+    // console.log(req)
     const food = await Food.create({
         name:req.body.name,
         description:req.body.description,
         price:req.body.price,
         category:req.body.category,
-        image:req.file.filename
+        image:req.file.path
     })
     res.status(201).json({
         status:"success",

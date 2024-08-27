@@ -44,7 +44,7 @@ const List = () => {
         {
           list.map((eachItem,index)=>(
             <div key={index} className="list-product-item list-items-er">
-              <img src={`${url}/images/${eachItem.image}`} alt="" />
+              <img src={`${eachItem.image}`} alt="" />
               <p>{eachItem.name}</p>
               <p>{eachItem.category}</p>
               <p>{eachItem.price}</p>
