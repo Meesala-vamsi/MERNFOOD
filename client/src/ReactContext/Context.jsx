@@ -11,7 +11,7 @@ export const ContextProvider = ({children})=>{
     const [token,setToken] = useState("")
     const [food_list,setFoodList] = useState([])
     // https://mernfood-backend.onrender.com
-    const url = 'http://localhost:3001'
+    const url = 'https://mernfood-backend.onrender.com'
 
 
     //ADD TO CART API
