@@ -25,7 +25,7 @@ const MyOrders = () => {
         getDetails()
     },[cookies.get("jwtToken")])
 
-    // console.log(data)
+    console.log(data)
 
   return (
     <div className="order-details-container">
@@ -35,7 +35,7 @@ const MyOrders = () => {
                 data.map((eachItem)=>(
                     <li className="order-list-items">
                         <div>
-                            <img src={url+"/images/"+eachItem.items[0].image} alt="" />
+                            <img src={eachItem.items[0].image} alt="" />
                             <p>{eachItem.items[0].name}</p>
                         </div>
                         <div>
